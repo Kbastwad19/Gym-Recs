@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Record </title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Gym Record </h1>
+  <label for="date">Select Date:</label>
+  <input type="date" id="date" class="dark-theme">
+  <br><br>
+  <div id="workouts">
+    <div class="workout">
+      <label for="workoutType">Select Workout Type:</label>
+      <select id="workoutType" class="dropdown dark-theme" onchange="populateExercises()">
+        <option value="chest_triceps">Chest & Triceps</option>
+        <option value="legs_shoulder">Legs & Shoulder</option>
+        <option value="biceps_back">Biceps & Back</option>
+      </select>
+      <br><br>
+      <label for="exercise">Select Exercise:</label>
+      <select id="exercise" class="dropdown dark-theme">
+      </select>
+      <br><br>
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" min="1" class="dark-theme">
+      <br><br>
+      <label for="sets">Sets:</label>
+      <input type="number" id="sets" min="1" class="dark-theme">
+    </div>
+  </div>
+  <br><br>
+  <button onclick="addRecord()" class="dark-theme">Add Record</button>
+  <br><br>
+  <label for="selectDate" class="dark-theme">Select Date to View Records:</label>
+  <select id="selectDate" onchange="showRecords()" class="dark-theme">
+  </select>
+  <br><br>
+  <div id="records"></div>
+</div>
+<script src="frontend.js"></script>
+</body>
+</html>
