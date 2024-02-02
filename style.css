@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Dark background */
+    color: #fff; /* Light text */
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; /* Dark container background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Dark container shadow */
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .dark-theme {
+    background-color: #444; /* Dark form elements background */
+    color: #fff; /* Light form elements text */
+    border: 1px solid #666; /* Dark form elements border */
+  }
+  
+  .dropdown {
+    padding: 8px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .workout {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  #records {
+    margin-top: 20px;
+  }
+  
+  .dark-theme option {
+    background-color: #333; /* Dark dropdown options background */
+    color: #fff; /* Light dropdown options text */
+  }
+  
+  .dark-theme option:hover {
+    background-color: #555; /* Darker dropdown options on hover */
+  }
+  
